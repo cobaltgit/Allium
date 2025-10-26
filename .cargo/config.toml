@@ -1,2 +1,5 @@
 [build]
 rustflags = ["--cfg", "tokio_unstable"]
+
+[target.arm-unknown-linux-gnueabihf]
+rustflags = ["-C", "target-cpu=cortex-a7"]
